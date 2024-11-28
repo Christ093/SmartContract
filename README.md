@@ -1,6 +1,5 @@
----
-
 # RequireAssertRevert Smart Contract
+---
 
 This project contains a Solidity smart contract that demonstrates the use of error handling mechanisms such as `require()`, `assert()`, and `revert()` in smart contract development. The contract allows users to mint and burn tokens with specific conditions, ensuring robust error handling and security.
 
