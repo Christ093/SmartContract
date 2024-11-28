@@ -71,7 +71,7 @@ The `revert()` function is used to explicitly cancel the transaction and provide
 ### Deployment:
 1. Copy the contract code into Remix IDE.
 2. Compile the contract using the Solidity compiler in Remix.
-3. Deploy the contract to the Remix VM (or a testnet like Rinkeby for real-world interactions).
+3. Deploy the contract to the Remix VM.
 4. After deployment, interact with the contract functions from the **Deployed Contracts** section.
 
 ### Interacting with Functions:
