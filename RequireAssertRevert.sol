@@ -36,8 +36,10 @@ contract MyToken {
 
     // Burn function to reduce total supply and the balance of the given address
     function burn(address _address, uint _value) external {
-        // Require that the address has enough tokens to burn
-        require(balances[_address] >= _value, "Insufficient balance to burn");
+        // Use revert() to terminate the transaction if the balance is insufficient
+        if (balances[_address] < _value) {
+            revert("Insufficient balance to burn");
+        }
 
         uint previousTotalSupply = totalSupply;  // Store the previous total supply
         
